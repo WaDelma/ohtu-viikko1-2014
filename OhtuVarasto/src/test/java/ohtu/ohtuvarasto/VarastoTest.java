@@ -17,7 +17,6 @@ public class VarastoTest {
 
 	@Test
 	public void removingNegativeAmountWorks() {
-		//		fail();
 		varasto.lisaaVarastoon(1);
 		assertEquals(0, varasto.otaVarastosta(-1), vertailuTarkkuus);
 		assertEquals(1, varasto.getSaldo(), vertailuTarkkuus);
