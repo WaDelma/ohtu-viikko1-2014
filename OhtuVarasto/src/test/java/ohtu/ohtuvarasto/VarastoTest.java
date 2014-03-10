@@ -1,6 +1,7 @@
 package ohtu.ohtuvarasto;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -17,6 +18,7 @@ public class VarastoTest {
 
 	@Test
 	public void removingNegativeAmountWorks() {
+		fail();
 		varasto.lisaaVarastoon(1);
 		assertEquals(0, varasto.otaVarastosta(-1), vertailuTarkkuus);
 		assertEquals(1, varasto.getSaldo(), vertailuTarkkuus);
